@@ -1,9 +1,9 @@
 {
-  "about_picture": "/image/picture.png",
+  "about_picture": "https://innowhat.github.io/resume-generator/image/picture.png",
   "about_name": "John Doe",
   "about_profession": "Programmer",
   "about_summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi perferendis, sequi, nihil eos saepe eum libero harum, exercitationem voluptatum. Dolores expedita dolorem quasi qui adipisci voluptas eveniet suscipit!",
-  "about_qr_code": "/image/qr-code.png",
+  "about_qr_code": "https://innowhat.github.io/resume-generator/image/qr-code.png",
   "about_item": [
     {
       "title": "Personal",
