@@ -23,7 +23,8 @@ import Letter from "./Letter";
 
 Font.register({
   family: "Roboto",
-  src: "/fonts/roboto/Roboto-Regular.ttf"
+  src:
+    "https://innowhat.github.io/resume-generator/fonts/roboto/Roboto-Regular.ttf"
 });
 
 const styles = StyleSheet.create({
