@@ -1,0 +1,217 @@
+{
+  "about_picture": "/image/picture.png",
+  "about_name": "John Doe",
+  "about_profession": "Programmer",
+  "about_summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi perferendis, sequi, nihil eos saepe eum libero harum, exercitationem voluptatum. Dolores expedita dolorem quasi qui adipisci voluptas eveniet suscipit!",
+  "about_qr_code": "/image/qr-code.png",
+  "about_item": [
+    {
+      "title": "Personal",
+      "item1": "Name: John Doe",
+      "item2": "DoB: January 1999",
+      "item3": "Location: Helsinki, Finland",
+      "id": 1
+    },
+    {
+      "title": "Contact",
+      "item1": "Phone: +35812345678",
+      "item2": "Email: info@John.com",
+      "item3": "Skype: John.Doe",
+      "id": 2
+    },
+    {
+      "title": "Social",
+      "item1": "Twitter : twitter.com/innowhat",
+      "item2": "Github: gitgub.com/innowhat",
+      "item3": "LinkedIn: linkedIn.com/innowhat",
+      "id": 3
+    },
+    {
+      "title": "Interest",
+      "item1": "Board Game, Chess, Pool",
+      "item2": "Football, Music",
+      "item3": "Running, Coding",
+      "id": 4
+    }
+  ],
+
+  "main_title": "John Doe",
+  "main_subtitle": "Frontend Engineer, IT Specialist",
+  "main_intro": "dolordddd sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+
+  "education_header": "EDUCATION",
+  "education_item": [
+    {
+      "institution": "Institution1",
+      "period": "01/01/2011 - 01/01/2012",
+      "degree": "Bachelor",
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi perferendis, sequi, nihil eos saepe eum libero harum, exercitationem voluptatum. Dolores expedita dolorem quasi qui adipisci voluptas eveniet suscipit!",
+      "id": 1
+    },
+    {
+      "institution": "Institution2",
+      "period": "01/01/2011 - 01/01/2012",
+      "degree": "Bachelor",
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi perferendis, sequi, nihil eos saepe eum libero harum, exercitationem voluptatum. Dolores expedita dolorem quasi qui adipisci voluptas eveniet suscipit!",
+      "id": 2
+    },
+    {
+      "institution": "Institution3",
+      "period": "01/01/2011 - 01/01/2012",
+      "degree": "IT",
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi perferendis, sequi, nihil eos saepe eum libero harum, exercitationem voluptatum. Dolores expedita dolorem quasi qui adipisci voluptas eveniet suscipit!",
+      "id": 3
+    }
+  ],
+
+  "employment_header": "EMPLOYMENT",
+  "employment_item": [
+    {
+      "company": "Data House Inc1",
+      "date": "01/01/2011 - date",
+      "position": "Frontend developer",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi perferendis, sequi, nihil eos saepe eum libero harum, exercitationem voluptatum...",
+      "id": 1
+    },
+    {
+      "company": "Info Tech Inc",
+      "date": "01/01/2011 - 01/01/2012",
+      "position": "IT developer",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi perferendis, sequi, nihil eos saepe eum libero harum, exercitationem voluptatum...",
+      "id": 2
+    },
+    {
+      "company": "Info Electro Inc",
+      "date": "01/01/2011 - 01/01/2012",
+      "position": "SW developer",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi perferendis, sequi, nihil eos saepe eum libero harum, exercitationem voluptatum...",
+      "id": 3
+    }
+  ],
+
+  "skills_header": "SKILLS",
+  "skills_item": [
+    { "type": "HTML", "level": 99, "id": 1 },
+    { "type": "CSS", "level": 98, "id": 2 },
+    { "type": "JavaScript", "level": 87, "id": 3 },
+    { "type": "Angular.js", "level": 20, "id": 4 },
+    { "type": "React.js", "level": 25, "id": 5 },
+    { "type": "Vue", "level": 25, "id": 6 },
+    { "type": "Angular", "level": 50, "id": 7 },
+    { "type": "Styled-Component", "level": 50, "id": 8 },
+    { "type": "Node.js", "level": 40, "id": 9 },
+    { "type": "TypeScript", "level": 25, "id": 10 },
+    { "type": "HubSpot development", "level": 80, "id": 11 },
+    { "type": "Swift", "level": 30, "id": 12 },
+    { "type": "Next.js", "level": 50, "id": 13 },
+    { "type": "JSON", "level": 80, "id": 14 },
+    { "type": "JQUERY", "level": 80, "id": 15 },
+    { "type": "WPF", "level": 50, "id": 16 },
+    { "type": "XAML", "level": 80, "id": 17 },
+    { "type": "XML", "level": 80, "id": 18 }
+  ],
+
+  "tools_header": "TOOLS",
+  "tools_item": [
+    {
+      "name": "VSCode IDE",
+      "id": 1
+    },
+    {
+      "name": "AWS",
+      "id": 2
+    },
+    {
+      "name": "HubSpot",
+      "id": 3
+    },
+    {
+      "name": "Azure",
+      "id": 4
+    },
+    {
+      "name": "Confluence",
+      "id": 5
+    },
+    {
+      "name": "JIRA",
+      "id": 6
+    },
+    {
+      "name": "Xcode",
+      "id": 7
+    },
+    {
+      "name": "MangoDB",
+      "id": 8
+    },
+    {
+      "name": "Gatsby",
+      "id": 9
+    },
+    {
+      "name": "ContentFul",
+      "id": 10
+    },
+    {
+      "name": "Xcode",
+      "id": 11
+    },
+    {
+      "name": "Github",
+      "id": 12
+    },
+    {
+      "name": "Bitbucket",
+      "id": 13
+    },
+    {
+      "name": "Visual studio IDE",
+      "id": 14
+    },
+    {
+      "name": "AWS",
+      "id": 15
+    },
+    {
+      "name": "Adobe XD",
+      "id": 16
+    },
+    {
+      "name": "Adobe Illustrator",
+      "id": 17
+    },
+    {
+      "name": "Android Studio IDE",
+      "id": 18
+    },
+    {
+      "name": "Office365",
+      "id": 19
+    },
+    {
+      "name": "NPM",
+      "id": 20
+    },
+    {
+      "name": "YARN",
+      "id": 21
+    },
+    {
+      "name": "Webpack",
+      "id": 22
+    },
+    {
+      "name": "Brew package manager",
+      "id": 22
+    },
+    {
+      "name": "Atom IDE",
+      "id": 23
+    },
+    {
+      "name": "HubSpot CRM",
+      "id": 24
+    }
+  ]
+}
