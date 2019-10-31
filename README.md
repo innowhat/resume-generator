@@ -1,8 +1,6 @@
 # Resume Maker
 
-![ReactJS Resume Generator  ](screenshot.png "Resume Generator  ")
-
-### <a href="/">LIVE DEMO</a>
+### <a href="https://innowhat.github.io/resume-generator/">LIVE DEMO</a>
 
 ## Description
 
