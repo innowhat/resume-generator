@@ -1,9 +1,9 @@
 {
-  "about_picture": "/image/picture.png",
+  "about_picture": "https://innowhat.github.io/resume-generator/image/picture.png",
   "about_name": "John Doe",
   "about_profession": "Programmer",
   "about_summary": "",
-  "about_qr_code": "/image/qr-code.png",
+  "about_qr_code": "https://innowhat.github.io/resume-generator/image/qr-code.png",
 
   "letter_header": "COVER LETTER",
   "letter_position": "FRONTEND ENGINEER POSITION",
