@@ -1,4 +1,4 @@
-# Resume Maker
+# Resume and cover letter Generator
 
 ### <a href="https://innowhat.github.io/resume-generator/">LIVE DEMO</a>
 
