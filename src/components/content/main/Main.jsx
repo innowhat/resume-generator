@@ -42,7 +42,9 @@ const Main = () => {
     handleToolsItem,
     handleAddToolsItem,
     handleRemoveToolsItem,
-    handleTemplateChange
+    handleTemplateChange,
+
+    handleReset
   } = useHook();
 
   const { theme } = useTheme();
@@ -82,6 +84,7 @@ const Main = () => {
               handleAddToolsItem={handleAddToolsItem}
               handleRemoveToolsItem={handleRemoveToolsItem}
               handleTemplateChange={handleTemplateChange}
+              handleReset={handleReset}
               theme={theme}
             />
           </TabPanel>

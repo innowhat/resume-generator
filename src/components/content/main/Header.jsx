@@ -29,7 +29,7 @@ const Header = props => {
   return (
     <div>
       <HeaderWrapper>
-        <Heading h2 center style={{ color: "#fff" }}>
+        <Heading h4 center style={{ color: "#fff" }}>
           RESUME AND COVER LETTER MAKER
         </Heading>
         <Heading h5 center style={{ color: "#fff" }}>

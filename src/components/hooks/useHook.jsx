@@ -143,6 +143,19 @@ const useHook = () => {
     setToolsItem(values);
   };
 
+  //Reset to default value
+
+  const handleReset = () => {
+    console.log("Reset form");
+    setState(resume);
+    setAboutItem(resume.about_item);
+    setEducationItem(resume.education_item);
+    setEmploymentItem(resume.employment_item);
+    setSkillsItem(resume.skills_item);
+    setToolsItem(resume.tools_item);
+    setSkillsItem(resume.skills_item);
+  };
+
   return {
     state,
     handleTheChange,
@@ -172,7 +185,8 @@ const useHook = () => {
     handleAddToolsItem,
     handleRemoveToolsItem,
 
-    handleTemplateChange
+    handleTemplateChange,
+    handleReset
   };
 };
 

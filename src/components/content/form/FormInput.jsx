@@ -2,6 +2,7 @@ import React from "react";
 import Flex from "../../styles/Flex";
 import Card from "../../styles/Card";
 import Heading from "../../styles/Heading";
+import Button from "../../styles/Button";
 
 import { FormWrapper, GroupInput, Input, Textarea } from "./FormInput.css";
 
@@ -9,14 +10,17 @@ const FormInput = props => {
   console.log(props.state);
   return (
     <Flex style={{ background: "#fff" }}>
-      <Card style={{ width: "100%" }}>
+      <div></div>
+
+      <Card style={{ width: "100%", textAlign: "center" }}>
         <Heading h3 center style={{ color: "#3a6073" }}>
           Enter your information and check Preview tab for output
         </Heading>
-
-        <Heading h5 center>
-          Note: default data will be restored if page is refreshed
-        </Heading>
+        <small>Note: default data will be restored if page is refreshed</small>{" "}
+        <br />
+        <Button inverse onClick={props.handleReset}>
+          Restore default
+        </Button>
       </Card>
       <Card noMargin>
         <FormWrapper>
