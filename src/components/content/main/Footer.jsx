@@ -59,15 +59,13 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <li>
-              <a
-                href="https://twitter.com/innowhat"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-            </li>
+            <a
+              href="https://twitter.com/innowhat"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>
           </li>
         </ul>
 

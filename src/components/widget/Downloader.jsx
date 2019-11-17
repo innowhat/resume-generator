@@ -8,7 +8,7 @@ const Downloader = props => {
   return (
     <Container style={{ padding: "0", float: "right" }}>
       <div center>
-        <Button>
+        <Button inverse>
           <PDFDownloadLink
             document={
               <Pdf

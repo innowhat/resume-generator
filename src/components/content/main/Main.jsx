@@ -97,6 +97,7 @@ const Main = () => {
               skillsItem={skillsItem}
               toolsItem={toolsItem}
               theme={theme}
+              handleReset={handleReset}
             />
           </TabPanel>
 

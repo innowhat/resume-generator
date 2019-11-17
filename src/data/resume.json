@@ -203,15 +203,15 @@
     },
     {
       "name": "Brew package manager",
-      "id": 22
-    },
-    {
-      "name": "Atom IDE",
       "id": 23
     },
     {
-      "name": "HubSpot CRM",
+      "name": "Atom IDE",
       "id": 24
+    },
+    {
+      "name": "HubSpot CRM",
+      "id": 25
     }
   ]
 }
