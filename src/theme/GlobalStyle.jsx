@@ -12,7 +12,9 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 300; 
         background: #ccc;
         color:#888;
-        height:100%
+        height:100%;
+        padding: 0;
+  margin: 0;
         }`;
 
 export default GlobalStyle;

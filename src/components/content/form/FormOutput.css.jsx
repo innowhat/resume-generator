@@ -20,7 +20,7 @@ export const WidgetWrapper = styled.div`
 export const FlexContainer = styled.div`
   margin: auto;
   max-width: rem-calc(1200);
-  /* background: white; */
+  background: white;
   @media screen and (min-width: 640px) {
     display: flex;
   }

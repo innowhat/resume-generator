@@ -13,7 +13,7 @@ const Output = props => {
           Restore default
         </Button>
       </div>
-      <Flex style={{ backgroundColor: "#fff" }} id="mainSide">
+      <FlexContainer>
         <Card primary style={{ color: "#fff" }} id="leftSide">
           <Card style={{ width: "100%", textAlign: "center" }}>
             {props.state.about_picture.length !== 0 && (
@@ -157,7 +157,7 @@ const Output = props => {
             <h3>{props.state.letter_sender}</h3>
           </Card>
         </Card>
-      </Flex>
+      </FlexContainer>
     </React.Fragment>
   );
 };
