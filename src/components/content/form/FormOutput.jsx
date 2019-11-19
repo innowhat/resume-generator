@@ -9,9 +9,9 @@ const Output = props => {
   return (
     <React.Fragment>
       <div style={{ textAlign: "right", width: "100%" }}>
-        <Button inverse onClick={props.handleReset}>
+        <button inverse onClick={props.handleReset}>
           Restore default
-        </Button>
+        </button>
       </div>
       <FlexContainer>
         <Card primary style={{ color: "#fff" }} id="leftSide">

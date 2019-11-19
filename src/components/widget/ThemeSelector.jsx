@@ -26,10 +26,10 @@ const ThemeSelector = () => {
   const { themeToggle } = useTheme();
 
   return (
-    <Select onChange={themeToggle}>
+    <select onChange={themeToggle}>
       <option value="light">Light</option>
       <option value="dark">Dark</option>
-    </Select>
+    </select>
   );
 };
 

@@ -23,10 +23,10 @@ const Select = styled.select`
 
 const TemplateSelector = props => {
   return (
-    <Select onChange={props.handleTemplateChange}>
+    <select onChange={props.handleTemplateChange}>
       <option value="resume">Resume</option>
       <option value="letter">Letter</option>
-    </Select>
+    </select>
   );
 };
 

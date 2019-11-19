@@ -11,10 +11,11 @@ const FormInput = props => {
   return (
     <React.Fragment>
       <div style={{ textAlign: "right", width: "100%" }}>
-        <Button inverse onClick={props.handleReset}>
+        <button inverse onClick={props.handleReset}>
           Restore default
-        </Button>
+        </button>
       </div>
+
       <Flex style={{ background: "#fff" }}>
         <Card style={{ width: "100%", textAlign: "center" }}>
           <Heading h3 center style={{ color: "#3a6073" }}>

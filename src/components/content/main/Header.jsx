@@ -32,9 +32,9 @@ const Header = props => {
         <Heading h4 center style={{ color: "#fff" }}>
           RESUME AND COVER LETTER MAKER
         </Heading>
-        <Heading h5 center style={{ color: "#fff" }}>
+        {/* <Heading h5 center style={{ color: "#fff" }}>
           Generate your resume or cover letter and download as PDF (A4 format).
-        </Heading>
+        </Heading> */}
         <Flex style={{ width: "100%", justifyContent: "center" }}>
           <MiniCard
             style={{
