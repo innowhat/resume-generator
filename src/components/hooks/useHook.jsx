@@ -29,7 +29,7 @@ const useHook = () => {
     }
   };
 
-  const handleTheChange = evt => {
+  const handleChange = evt => {
     console.log(evt.target.name);
     console.log(evt.target.value);
     const { name, value } = evt.target;
@@ -70,79 +70,6 @@ const useHook = () => {
     setToolsItem(fieldInfo);
   };
 
-  const handleAddAboutItem = () => {
-    setAboutItem(prevFields => [
-      ...prevFields,
-      { title: "Item", details: "details" }
-    ]);
-  };
-
-  const handleAddEducationItem = () => {
-    setEducationItem(prevEdu => [
-      ...prevEdu,
-      {
-        institution: "University2",
-        period: "01/01/2011 - 01/01/2012",
-        degree: "Bachelor",
-        info:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi"
-      }
-    ]);
-  };
-
-  const handleAddEmploymentItem = () => {
-    setEmploymentItem(prevEmp => [
-      ...prevEmp,
-      {
-        company: "Data Science Inc1",
-        date: "01/01/2011 - date",
-        position: "Frontend developer",
-        details:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi perferendis, sequi, nihil eos saepe eum libero harum, exercitationem voluptatum..."
-      }
-    ]);
-  };
-
-  const handleAddSkillsItem = () => {
-    setSkillsItem(prevSkill => [...prevSkill, { type: "HTML", level: 99 }]);
-  };
-
-  const handleAddToolsItem = () => {
-    setToolsItem(prevTool => [...prevTool, { name: "VsCode" }]);
-  };
-
-  //HANDLE REMOVAL
-
-  const handleRemoveAboutItem = i => {
-    const values = [...aboutItem];
-    values.splice(i, 1);
-    setAboutItem(values);
-  };
-
-  const handleRemoveEducationItem = i => {
-    const values = [...educationItem];
-    values.splice(i, 1);
-    setEducationItem(values);
-  };
-
-  const handleRemoveEmploymentItem = i => {
-    const values = [...employmentItem];
-    values.splice(i, 1);
-    setEmploymentItem(values);
-  };
-
-  const handleRemoveSkillsItem = i => {
-    const values = [...skillsItem];
-    values.splice(i, 1);
-    setSkillsItem(values);
-  };
-
-  const handleRemoveToolsItem = i => {
-    const values = [...toolsItem];
-    values.splice(i, 1);
-    setToolsItem(values);
-  };
-
   //Reset to default value
 
   const handleReset = () => {
@@ -157,33 +84,28 @@ const useHook = () => {
   };
 
   return {
+    setAboutItem,
+    setEducationItem,
+    setEmploymentItem,
+    setSkillsItem,
+    setToolsItem,
     state,
-    handleTheChange,
+    handleChange,
 
     aboutItem,
     handleAboutItem,
-    handleAddAboutItem,
-    handleRemoveAboutItem,
 
     employmentItem,
     handleEmploymentItem,
-    handleAddEmploymentItem,
-    handleRemoveEmploymentItem,
 
     educationItem,
     handleEducationItem,
-    handleAddEducationItem,
-    handleRemoveEducationItem,
 
     skillsItem,
     handleSkillsItem,
-    handleAddSkillsItem,
-    handleRemoveSkillsItem,
 
     toolsItem,
     handleToolsItem,
-    handleAddToolsItem,
-    handleRemoveToolsItem,
 
     handleTemplateChange,
     handleReset

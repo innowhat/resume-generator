@@ -15,33 +15,28 @@ import Downloader from "../../widget/Downloader";
 
 const Main = () => {
   const {
+    setAboutItem,
+    setEducationItem,
+    setEmploymentItem,
+    setSkillsItem,
+    setToolsItem,
     state,
-    handleTheChange,
+    handleChange,
 
     aboutItem,
     handleAboutItem,
-    handleAddAboutItem,
-    handleRemoveAboutItem,
 
     employmentItem,
     handleEmploymentItem,
-    handleAddEmploymentItem,
-    handleRemoveEmploymentItem,
 
     educationItem,
     handleEducationItem,
-    handleAddEducationItem,
-    handleRemoveEducationItem,
 
     skillsItem,
     handleSkillsItem,
-    handleAddSkillsItem,
-    handleRemoveSkillsItem,
 
     toolsItem,
     handleToolsItem,
-    handleAddToolsItem,
-    handleRemoveToolsItem,
     handleTemplateChange,
 
     handleReset
@@ -61,28 +56,23 @@ const Main = () => {
           </TabList>
           <TabPanel>
             <FormInput
+              setSkillsItem={setSkillsItem}
+              setToolsItem={setToolsItem}
+              setEmploymentItem={setEmploymentItem}
+              setEducationItem={setEducationItem}
+              setAboutItem={setAboutItem}
               state={state}
-              handleTheChange={handleTheChange}
+              handleChange={handleChange}
               aboutItem={aboutItem}
               handleAboutItem={handleAboutItem}
-              handleAddAboutItem={handleAddAboutItem}
-              handleRemoveAboutItem={handleRemoveAboutItem}
               educationItem={educationItem}
               handleEducationItem={handleEducationItem}
-              handleAddEducationItem={handleAddEducationItem}
-              handleRemoveEducationItem={handleRemoveEducationItem}
               employmentItem={employmentItem}
               handleEmploymentItem={handleEmploymentItem}
-              handleAddEmploymentItem={handleAddEmploymentItem}
-              handleRemoveEmploymentItem={handleRemoveEmploymentItem}
               skillsItem={skillsItem}
               handleSkillsItem={handleSkillsItem}
-              handleAddSkillsItem={handleAddSkillsItem}
-              handleRemoveSkillsItem={handleRemoveSkillsItem}
               toolsItem={toolsItem}
               handleToolsItem={handleToolsItem}
-              handleAddToolsItem={handleAddToolsItem}
-              handleRemoveToolsItem={handleRemoveToolsItem}
               handleTemplateChange={handleTemplateChange}
               handleReset={handleReset}
               theme={theme}
@@ -104,54 +94,34 @@ const Main = () => {
           <TabPanel>
             <Downloader
               state={state}
-              handleTheChange={handleTheChange}
+              handleChange={handleChange}
               aboutItem={aboutItem}
               handleAboutItem={handleAboutItem}
-              handleAddAboutItem={handleAddAboutItem}
-              handleRemoveAboutItem={handleRemoveAboutItem}
               educationItem={educationItem}
               handleEducationItem={handleEducationItem}
-              handleAddEducationItem={handleAddEducationItem}
-              handleRemoveEducationItem={handleRemoveEducationItem}
               employmentItem={employmentItem}
               handleEmploymentItem={handleEmploymentItem}
-              handleAddEmploymentItem={handleAddEmploymentItem}
-              handleRemoveEmploymentItem={handleRemoveEmploymentItem}
               skillsItem={skillsItem}
               handleSkillsItem={handleSkillsItem}
-              handleAddSkillsItem={handleAddSkillsItem}
-              handleRemoveSkillsItem={handleRemoveSkillsItem}
               toolsItem={toolsItem}
               handleToolsItem={handleToolsItem}
-              handleAddToolsItem={handleAddToolsItem}
-              handleRemoveToolsItem={handleRemoveToolsItem}
               handleTemplateChange={handleTemplateChange}
               theme={theme}
             />
             <PDFViewer style={{ width: "100%", height: "800px" }}>
               <Pdf
                 state={state}
-                handleTheChange={handleTheChange}
+                handleChange={handleChange}
                 aboutItem={aboutItem}
                 handleAboutItem={handleAboutItem}
-                handleAddAboutItem={handleAddAboutItem}
-                handleRemoveAboutItem={handleRemoveAboutItem}
                 educationItem={educationItem}
                 handleEducationItem={handleEducationItem}
-                handleAddEducationItem={handleAddEducationItem}
-                handleRemoveEducationItem={handleRemoveEducationItem}
                 employmentItem={employmentItem}
                 handleEmploymentItem={handleEmploymentItem}
-                handleAddEmploymentItem={handleAddEmploymentItem}
-                handleRemoveEmploymentItem={handleRemoveEmploymentItem}
                 skillsItem={skillsItem}
                 handleSkillsItem={handleSkillsItem}
-                handleAddSkillsItem={handleAddSkillsItem}
-                handleRemoveSkillsItem={handleRemoveSkillsItem}
                 toolsItem={toolsItem}
                 handleToolsItem={handleToolsItem}
-                handleAddToolsItem={handleAddToolsItem}
-                handleRemoveToolsItem={handleRemoveToolsItem}
                 handleTemplateChange={handleTemplateChange}
                 theme={theme}
               />

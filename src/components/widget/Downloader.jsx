@@ -13,27 +13,17 @@ const Downloader = props => {
             document={
               <Pdf
                 state={props.state}
-                handleTheChange={props.handleTheChange}
+                handleChange={props.handleChange}
                 aboutItem={props.aboutItem}
                 handleAboutItem={props.handleAboutItem}
-                handleAddAboutItem={props.handleAddAboutItem}
-                handleRemoveAboutItem={props.handleRemoveAboutItem}
                 educationItem={props.educationItem}
                 handleEducationItem={props.handleEducationItem}
-                handleAddEducationItem={props.handleAddEducationItem}
-                handleRemoveEducationItem={props.handleRemoveEducationItem}
                 employmentItem={props.employmentItem}
                 handleEmploymentItem={props.handleEmploymentItem}
-                handleAddEmploymentItem={props.handleAddEmploymentItem}
-                handleRemoveEmploymentItem={props.handleRemoveEmploymentItem}
                 skillsItem={props.skillsItem}
                 handleSkillsItem={props.handleSkillsItem}
-                handleAddSkillsItem={props.handleAddSkillsItem}
-                handleRemoveSkillsItem={props.handleRemoveSkillsItem}
                 toolsItem={props.toolsItem}
                 handleToolsItem={props.handleToolsItem}
-                handleAddToolsItem={props.handleAddToolsItem}
-                handleRemoveToolsItem={props.handleRemoveToolsItem}
                 theme={props.theme}
               />
             }

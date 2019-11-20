@@ -34,14 +34,14 @@ const FormInput = props => {
                 name="about_picture"
                 placeholder="Enter picture link"
                 value={props.state.about_picture}
-                onChange={props.handleTheChange}
+                onChange={props.handleChange}
               />
               <Input
                 type="text"
                 name="about_name"
                 placeholder="Enter text"
                 value={props.state.about_name}
-                onChange={props.handleTheChange}
+                onChange={props.handleChange}
               />
               <br />
               <Input
@@ -49,7 +49,7 @@ const FormInput = props => {
                 name="about_profession"
                 placeholder="Enter profession"
                 value={props.state.about_profession}
-                onChange={props.handleTheChange}
+                onChange={props.handleChange}
               />
               <br />
               <Textarea
@@ -57,7 +57,7 @@ const FormInput = props => {
                 type="text"
                 placeholder="Enter summary"
                 value={props.state.about_summary}
-                onChange={props.handleTheChange}
+                onChange={props.handleChange}
                 style={{ minHeight: "100px" }}
               />
             </GroupInput>
@@ -70,9 +70,13 @@ const FormInput = props => {
                   return (
                     <div key={index}>
                       <Input
+                        onClick={i => {
+                          const values = [...props.aboutItem];
+                          values.splice(i, 1);
+                          props.setAboutItem(values);
+                        }}
                         type="button"
                         value="X remove item"
-                        onClick={() => props.handleRemoveAboutItem(index)}
                         style={{
                           float: "right",
                           background: "red",
@@ -121,7 +125,12 @@ const FormInput = props => {
               <Input
                 type="button"
                 value="+ Add items"
-                onClick={props.handleAddAboutItem}
+                onClick={() =>
+                  props.setAboutItem(prevFields => [
+                    ...prevFields,
+                    { title: "Item", details: "details" }
+                  ])
+                }
                 style={{ backgroundColor: "green", color: "#fff" }}
               />
             </FormWrapper>
@@ -134,7 +143,7 @@ const FormInput = props => {
                 name="about_qr_code"
                 placeholder="Enter QR code link"
                 value={props.state.about_qr_code}
-                onChange={props.handleTheChange}
+                onChange={props.handleChange}
               />
             </GroupInput>
           </FormWrapper>
@@ -150,7 +159,7 @@ const FormInput = props => {
                   name="main_title"
                   placeholder="Enter main title"
                   value={props.state.main_title}
-                  onChange={props.handleTheChange}
+                  onChange={props.handleChange}
                 />
                 <br />
                 <Input
@@ -158,7 +167,7 @@ const FormInput = props => {
                   name="main_subtitle"
                   placeholder="Enter main sub title"
                   value={props.state.main_subtitle}
-                  onChange={props.handleTheChange}
+                  onChange={props.handleChange}
                 />
                 <br />
                 <Textarea
@@ -166,7 +175,7 @@ const FormInput = props => {
                   name="main_intro"
                   placeholder="Enter main introductory text - optional"
                   value={props.state.main_intro}
-                  onChange={props.handleTheChange}
+                  onChange={props.handleChange}
                   style={{ minHeight: "100px" }}
                 />
               </GroupInput>
@@ -180,16 +189,20 @@ const FormInput = props => {
                 name="education_header"
                 placeholder="Enter section header"
                 value={props.state.education_header}
-                onChange={props.handleTheChange}
+                onChange={props.handleChange}
               />
               <GroupInput>
                 {props.educationItem.map((item, index) => {
                   return (
                     <div key={index}>
                       <Input
+                        onClick={i => {
+                          const values = [...props.educationItem];
+                          values.splice(i, 1);
+                          props.setEducationItem(values);
+                        }}
                         type="button"
                         value=" X"
-                        onClick={() => props.handleRemoveEducationItem(index)}
                         style={{
                           float: "right",
                           background: "red",
@@ -240,7 +253,18 @@ const FormInput = props => {
               <Input
                 type="button"
                 value="+ Add education"
-                onClick={props.handleAddEducationItem}
+                onClick={() =>
+                  props.setEducationItem(prevEdu => [
+                    ...prevEdu,
+                    {
+                      institution: "University2",
+                      period: "01/01/2011 - 01/01/2012",
+                      degree: "Bachelor",
+                      info:
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi"
+                    }
+                  ])
+                }
                 style={{ backgroundColor: "green", color: "#fff" }}
               />
             </FormWrapper>
@@ -254,7 +278,7 @@ const FormInput = props => {
                 name="employment_header"
                 placeholder="Enter section header"
                 value={props.state.employment_header}
-                onChange={props.handleTheChange}
+                onChange={props.handleChange}
               />
 
               <GroupInput>
@@ -262,9 +286,13 @@ const FormInput = props => {
                   return (
                     <div key={index}>
                       <Input
+                        onClick={i => {
+                          const values = [...props.employmentItem];
+                          values.splice(i, 1);
+                          props.setEmploymentItem(values);
+                        }}
                         type="button"
                         value=" X"
-                        onClick={() => props.handleRemoveEmploymentItem(index)}
                         style={{
                           float: "right",
                           background: "red",
@@ -315,7 +343,18 @@ const FormInput = props => {
               <Input
                 type="button"
                 value="+ Add employment"
-                onClick={props.handleAddEmploymentItem}
+                onClick={() =>
+                  props.setEmploymentItem(prevEmp => [
+                    ...prevEmp,
+                    {
+                      company: "Data Science Inc1",
+                      date: "01/01/2011 - date",
+                      position: "Frontend developer",
+                      details:
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aliquam eligendi perferendis, sequi, nihil eos saepe eum libero harum, exercitationem voluptatum..."
+                    }
+                  ])
+                }
                 style={{ backgroundColor: "green", color: "#fff" }}
               />
             </FormWrapper>
@@ -329,16 +368,20 @@ const FormInput = props => {
                 name="skills_header"
                 placeholder="Enter section header"
                 value={props.state.skills_header}
-                onChange={props.handleTheChange}
+                onChange={props.handleChange}
               />
               <GroupInput>
                 {props.skillsItem.map((item, index) => {
                   return (
                     <div key={index}>
                       <Input
+                        onClick={i => {
+                          const values = [...props.skillsItem];
+                          values.splice(i, 1);
+                          props.setSkillsItem(values);
+                        }}
                         type="button"
                         value=" X"
-                        onClick={() => props.handleRemoveSkillsItem(index)}
                         style={{
                           float: "right",
                           background: "red",
@@ -370,9 +413,14 @@ const FormInput = props => {
                 })}
               </GroupInput>
               <Input
+                onClick={() => {
+                  props.setSkillsItem(prevSkill => [
+                    ...prevSkill,
+                    { type: "HTML", level: 99 }
+                  ]);
+                }}
                 type="button"
                 value="+ Add skills"
-                onClick={props.handleAddSkillsItem}
                 style={{ backgroundColor: "green", color: "#fff" }}
               />
             </FormWrapper>
@@ -385,16 +433,20 @@ const FormInput = props => {
                 name="tools_header"
                 placeholder="Enter section header"
                 value={props.state.tools_header}
-                onChange={props.handleTheChange}
+                onChange={props.handleChange}
               />
               <GroupInput>
                 {props.toolsItem.map((item, index) => {
                   return (
                     <div key={index}>
                       <Input
+                        onClick={i => {
+                          const values = [...props.toolsItem];
+                          values.splice(i, 1);
+                          props.setToolsItem(values);
+                        }}
                         type="button"
                         value=" X"
-                        onClick={() => props.handleRemoveToolsItem(index)}
                         style={{
                           float: "right",
                           background: "red",
@@ -415,9 +467,14 @@ const FormInput = props => {
                 })}
               </GroupInput>
               <Input
+                onClick={() => {
+                  props.setToolsItem(prevTool => [
+                    ...prevTool,
+                    { name: "VsCode" }
+                  ]);
+                }}
                 type="button"
                 value="+ Add tool"
-                onClick={props.handleAddToolsItem}
                 style={{ backgroundColor: "green", color: "#fff" }}
               />
             </FormWrapper>
@@ -432,7 +489,7 @@ const FormInput = props => {
                   name="letter_header"
                   placeholder="Enter label"
                   value={props.state.letter_header}
-                  onChange={props.handleTheChange}
+                  onChange={props.handleChange}
                 />
               </span>
 
@@ -443,7 +500,7 @@ const FormInput = props => {
                   name="letter_position"
                   placeholder="Enter title"
                   value={props.state.letter_position}
-                  onChange={props.handleTheChange}
+                  onChange={props.handleChange}
                 />
                 <br />
                 <Input
@@ -451,7 +508,7 @@ const FormInput = props => {
                   name="letter_date"
                   placeholder="Enter date"
                   value={props.state.letter_date}
-                  onChange={props.handleTheChange}
+                  onChange={props.handleChange}
                 />
                 <br />
                 <Input
@@ -459,7 +516,7 @@ const FormInput = props => {
                   name="letter_recipient"
                   placeholder="Enter recipient name"
                   value={props.state.letter_recipient}
-                  onChange={props.handleTheChange}
+                  onChange={props.handleChange}
                 />
                 <br />
                 <Input
@@ -467,7 +524,7 @@ const FormInput = props => {
                   name="letter_address"
                   placeholder="Enter recipient address"
                   value={props.state.letter_address}
-                  onChange={props.handleTheChange}
+                  onChange={props.handleChange}
                 />
                 <br />
                 <Textarea
@@ -475,7 +532,7 @@ const FormInput = props => {
                   type="text"
                   placeholder="Enter message"
                   value={props.state.letter_message}
-                  onChange={props.handleTheChange}
+                  onChange={props.handleChange}
                   style={{ minHeight: "100px" }}
                 />
 
@@ -484,7 +541,7 @@ const FormInput = props => {
                   name="letter_sender"
                   placeholder="Enter senders name"
                   value={props.state.letter_sender}
-                  onChange={props.handleTheChange}
+                  onChange={props.handleChange}
                 />
               </GroupInput>
             </FormWrapper>
