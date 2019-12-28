@@ -9,8 +9,8 @@ export const GroupInput = styled.div`
 export const FormWrapper = styled.div`
   border: 2px #ddd solid;
   display: block;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
 `;
 
 export const Form = styled.form`

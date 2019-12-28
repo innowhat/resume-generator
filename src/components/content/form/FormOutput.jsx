@@ -8,11 +8,6 @@ import { FlexContainer, Aside, Content, SkillsLevel } from "./FormOutput.css";
 const Output = props => {
   return (
     <React.Fragment>
-      <div style={{ textAlign: "right", width: "100%" }}>
-        <button inverse onClick={props.handleReset}>
-          Restore default
-        </button>
-      </div>
       <FlexContainer>
         <Card primary style={{ color: "#fff" }} id="leftSide">
           <Card style={{ width: "100%", textAlign: "center" }}>

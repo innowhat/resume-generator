@@ -7,10 +7,10 @@ import MiniCard from "../../styles/MiniCard";
 import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
-  position: fixed;
+  /* position: fixed;*/
   top: 0;
   left: 0;
-  width: 100%;
+  /* width: 100%; */
   background-image: linear-gradient(to right, #16222a 0%, #3a6073 100%);
   height: auto;
   z-index: 1;
@@ -64,7 +64,6 @@ const Header = props => {
           </MiniCard>
         </Flex>
       </HeaderWrapper>
-      <Spacer />
     </div>
   );
 };

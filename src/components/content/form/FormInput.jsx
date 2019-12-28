@@ -10,13 +10,12 @@ const FormInput = props => {
   console.log(props.state);
   return (
     <React.Fragment>
-      <div style={{ textAlign: "right", width: "100%" }}>
-        <button inverse onClick={props.handleReset}>
-          Restore default
-        </button>
-      </div>
-
       <Flex style={{ background: "#fff" }}>
+        <div style={{ textAlign: "right", width: "100%" }}>
+          <button inverse onClick={props.handleReset}>
+            Restore default
+          </button>
+        </div>
         <Card style={{ width: "100%", textAlign: "center" }}>
           <Heading h3 center style={{ color: "#3a6073" }}>
             Enter your information and check Preview tab for output
@@ -25,7 +24,7 @@ const FormInput = props => {
             Note: default data will be restored if page is refreshed
           </small>{" "}
         </Card>
-        <Card noMargin>
+        <Card noMargin big>
           <FormWrapper>
             <h3>About info section</h3>
             <GroupInput>
