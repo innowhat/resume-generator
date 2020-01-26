@@ -72,7 +72,7 @@ const Footer = () => {
         </ul>
 
         <Card style={{ width: "100%", textAlign: "center" }}>
-          <small>Copyright © 2019 innowhat.com</small>
+          <small>Copyright © 2020 innowhat.com</small>
         </Card>
       </Flex>
     </FooterWrapper>
