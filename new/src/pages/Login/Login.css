@@ -1,0 +1,13 @@
+.login-form {
+  width: 25rem;
+  max-width: 80%;
+  margin: 3rem auto;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form-actions {
+  text-align: center;
+}
