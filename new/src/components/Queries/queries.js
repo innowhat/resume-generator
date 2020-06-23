@@ -30,6 +30,15 @@ export const PROFILES_QUERY = gql`
     profiles {
       _id
       title
+    }
+  }
+`;
+
+export const PROFILES_DETAILS_QUERY = gql`
+  {
+    profiles {
+      _id
+      title
       description
     }
   }

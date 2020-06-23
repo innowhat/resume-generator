@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-
 import { useQuery } from "@apollo/client";
 import { PROFILES_QUERY } from "./../../components/Queries//queries";
 const Header = () => {

@@ -34,7 +34,7 @@ const Login = () => {
     window.localStorage.setItem("token", data.login.token);
 
     // Redirect to home page
-    return <Redirect to="/" />;
+    return <Redirect to="/profiles" />;
   }
 
   return (
